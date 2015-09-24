@@ -1,6 +1,8 @@
 #GETTING AND CLEANING DATA
-
 #COURSE PROJECT
+
+##IF YOU DO NOT HAVE THE RESHAPE2 PACKAGE INSTALLED, INSTALL IT BEFORE RUNNING THIS CODE
+install.packages("reshape2")
 
 ##DOWNLOAD .ZIP AND EXTRACT FILES (NOTE: THE ZIP FILE IS FILE 62.6MB)
   if (!file.exists("./data")){
@@ -108,7 +110,6 @@ names(activities)[1] <- "label"
   simpleData <- simpleData[order(simpleData$subject, simpleData$activity), ]
   
 ##RESHAPE TABLE SO THAT EACH ROW CONSISTS OF ONE MEAN OBSERVATION FOR EACH ACTIVITY FOR EACH PERSON  
-  install.packages("reshape2")
   library(reshape2)
   
   measurevars <- names(simpleData)[3:length(simpleData)]
