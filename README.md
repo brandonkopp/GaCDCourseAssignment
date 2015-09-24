@@ -7,7 +7,7 @@ The dataset created by running the run_analysis.R script is a subset of a larger
 ###What This File Does
 The run_analysis.R script downloads a multi-file dataset, combines those files into a single dataset, subsets and reorganizes the data, and provides meaningful lables for each of the activities and measurements listed in each row. The exact editing steps are in the next section and the code is also annotated.  
 
-The final output of this script is a comma separated value text file with four variables and 11880 observations. An explanation of the four variables is outlined below.
+The final output of this script is a comma separated value text file with four variables and 11880 observations. An explanation of the four variables is outlined in the Codebook.md file in this repository.
 
 ###Data Editing Steps Performed By run_analysis.R
 1. Download .zip and extract files 
